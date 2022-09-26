@@ -1,0 +1,1098 @@
+@font-face {
+    font-family: "myfont";
+    src: url("MBF\ ATOM\ V5.woff") format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: myfont;
+    letter-spacing: 0px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    shape-rendering: crispEdges;
+    image-rendering: optimizeQuality;
+    border: none;
+    background: none;
+    appearance: none;
+    outline: none;
+}
+
+:root {
+    --black: #1f1f1f;
+    --brightGreen: rgb(0, 255, 153);
+}
+
+body {
+    height: 4250px;
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    height: 125px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 75px;
+}
+
+    .logoBox {
+        height: 100%;
+        width: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+        .logoText {
+            font-size: 34px;
+        }
+
+    .headerLineBox {
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .headerLine {
+            height: 2px;
+            width: 100%;
+            background-color: white;
+        }
+
+    .nav {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .navText {
+            font-size: 18px;
+        }
+
+footer {
+    height: 125px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+    .footerText {
+        font-size: 16px;
+        transition: linear 0.2s;
+    }
+
+    .footerText:hover {
+        color: var(--brightGreen);
+        transition: linear 0.2s;
+    }
+
+section {
+    height: 1000px;
+    width: 100%;
+}
+
+    .home {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .homeLeft {
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .homeLeftBox {
+                height: 40%;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .homeLeftUpper {
+                    height: 20%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                    .nameText {
+                        font-size: 52px;
+                    }
+
+                .homeLeftLower {
+                    height: 80%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                    .homeLeftLowerLeft {
+                        height: 100%;
+                        width: 10%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                        .homeLeftLowerLeftLine {
+                            height: 70%;
+                            width: 2px;
+                            background-color: white;
+                        }
+
+                    .homeLeftLowerRight {
+                        height: 80%;
+                        width: 85%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+
+                        .introDescBox {
+                            height: 25%;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
+
+                            .introDescText {
+                                font-size: 22px;
+                                opacity: 0.7;
+                            }
+
+                        .fullStackBox {
+                            height: 25%;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
+
+                            .fullStackText {
+                                font-size: 20px;
+                                color: var(--brightGreen);
+                            }
+
+                        .twoButtonsBox {
+                            height: 50%;
+                            width: 65%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+
+                            .button1 {
+                                height: 46px;
+                                width: 120px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: white;
+                                border-radius: 3px;
+                                cursor: pointer;
+                            }
+
+                                .buttonText1 {
+                                    font-size: 16px;
+                                    color: var(--black);
+                                }
+
+                            .button2 {
+                                height: 46px;
+                                width: 120px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: rgb(46, 46, 46);
+                                border-radius: 3px;
+                                cursor: pointer;
+                            }
+
+                                .buttonText2 {
+                                    font-size: 16px;
+                                    color: white;
+                                }
+
+        .homeRight {
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .linksBox {
+                height: 30%;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .linkBox {
+                    height: 30%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                    .linkText {
+                        font-size: 20px;
+                        color: white;
+                        opacity: 0.7;
+                        transition: linear 0.3s;
+                        cursor: pointer;
+                    }
+
+                    .linkText:hover {
+                        font-size: 21px;
+                        color: var(--brightGreen);
+                        transition: linear 0.3s;
+                    }
+
+                    #linkText3:hover {
+                        cursor: default;
+                        font-size: 20px;
+                        color: var(--brightGreen);
+                        transition: linear 0.3s;
+                    }
+
+
+    .introduction {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+        .introductionLeft {
+            height: 100%;
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .pictureBox {
+                height: 300px;
+                width: 300px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .picture {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    border: 2px solid white;
+                }
+
+        .introductionMiddle {
+            height: 100%;
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .introductionMiddleLineBox {
+                height: 10%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+                .introductionMiddleLine {
+                    height: 2px;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--brightGreen);
+                }
+
+        .introductionRight {
+            height: 50%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .introductionRightBox {
+                height: 100%;
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .introductionRightHeaderBox {
+                height: 15%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+                .introductionRightHeaderText {
+                    font-size: 36px;
+                }
+
+            .introductionRightBodyBox {
+                height: 85%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .introductionRightBodyText {
+                font-family: 'Lato', sans-serif;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .skillsHeader {
+            height: 10%;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+            .skillsHeaderText {
+                font-size: 36px;
+            }
+
+        .skillsMain {
+            height: 90%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .skillsMainLeft {
+                height: 80%;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .skillsShelf {
+                    height: 20%;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    .skillsShelfHeader {
+                        height: 30%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+
+                        .skillsShelfHeaderText {
+                            font-size: 19px;
+                        }
+
+                    .skillsShelfBody {
+                        height: 70%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding-left: 50px;
+                    }
+
+                        .skillsShelfBodyText {
+                            font-size: 17px;
+                        }
+
+            .skillsMainRight {
+                height: 80%;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .portfolioHeader {
+            height: 15%;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+            .portfolioHeaderText {
+                font-size: 36px;
+            }
+
+        .portfolioMain {
+            height: 85%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .portfolioContainer {
+                height: 60%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+                .projectCard {
+                    width: 550px;
+                    height: 350px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 40px 40px;
+                    background-color: rgb(24, 24, 24);
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: linear 0.2s;
+                }
+
+                .projectCard:hover {
+                    box-shadow: 0 0 30px var(--brightGreen);
+                    transition: linear 0.2s;
+                }
+
+                    .projectCardHeaderBox {
+                        height: 20%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                        .projectName {
+                            font-size: 20px;
+                        }
+
+                        .projectTech {
+                            font-size: 16px;
+                        }
+
+                    .projectCardBodyBox {
+                        height: 80%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                    }
+
+                        .projectPicBox {
+                            height: 150px;
+                            width: 150px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: var(--black);
+                            border-radius: 5px;
+                        }
+
+                            .projectPic {
+                                height: 100%;
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 5px;
+                                opacity: 0.6;
+                            }
+
+                        .projectDescBox {
+                            height: 150px;
+                            width: 250px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
+
+                            .projectDesc {
+                                font-size: 16px;
+                                line-height: 1.5;
+                            }
+
+@media screen and (max-width: 2300px) {
+    .nameText {
+        font-size: 38px;
+    }
+
+    .button1 {
+        height: 40px;
+        width: 100px;
+    }
+
+    .buttonText1 {
+        font-size: 14px;
+    }
+
+    .button2 {
+        height: 40px;
+        width: 100px;
+    }
+
+    .buttonText2 {
+        font-size: 14px;
+    }
+
+    .introductionRight {
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .homeLeftBox {
+        width: 60%;
+    }
+
+    .nav {
+        width: 30%;
+    }
+
+    .portfolioContainer {
+        flex-direction: column;
+    }
+
+    .skills {
+        height: 700px;
+    }
+
+    .skillsMainLeft {
+        height: 100%;
+    }
+
+    .skillsMainRight {
+        height: 100%;
+    }
+
+    .portfolio {
+        height: 1300px;
+    }
+
+    .portfolioContainer {
+        height: 90%;
+    }
+
+    .projectCard {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .introductionRightHeaderText {
+        font-size: 32px;
+    }
+
+    .introductionRight {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .introDescText {
+        font-size: 22px;
+    }
+
+    .fullStackText {
+        font-size: 20px;
+    }
+
+    .homeLeftBox {
+        width: 80%;
+    }
+
+    .pictureBox {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    .introductionRightBox {
+        width: 90%;
+    }
+
+    .introductionMiddle {
+        margin-right: 20px;
+    }
+
+    .skillsShelf {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .nav {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .introduction {
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+    .introductionMiddle {
+        margin-left: 20px;
+    }
+
+    .twoButtonsBox {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .twoButtonsBox {
+        width: 80%;
+    }
+
+    .home {
+        padding: 0 50px;
+    }
+
+    .homeLeft {
+        width: 50%;
+    }
+
+    .homeRight {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav {
+        width: 50%;
+    }
+
+    .headerLineBox {
+        width: 20%;
+    }
+
+    .home {
+        height: 700px;
+    }
+
+    .homeLeftBox {
+        height: 60%;
+    }
+
+    .homeRightBox {
+        height: 60%;
+    }
+
+    .introduction {
+        flex-direction: column;
+        height: 1300px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .introductionMiddleLineBox {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .introductionLeft {
+        width: 80%;
+        height: 30%;
+    }
+
+    .introductionMiddle {
+        width: 80%;
+        height: 10%;
+    }
+
+    .introductionRight {
+        width: 80%;
+        height: 40%;
+    }
+
+    .skillsShelf {
+        width: 100%;
+        height: 30%;
+    }
+
+    .skillsHeader {
+        width: 80%;
+    }
+
+    .skillsMain {
+        flex-direction: column;
+    }
+
+    .skillsMainLeft {
+        height: 60%;
+        width: 80%;
+    }
+
+    .skillsMainRight {
+        height: 40%;
+        width: 80%;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .homeLeft {
+        height: 80%;
+        width: 100%;
+    }
+
+    .homeRight {
+        height: 20%;
+        width: 80%;
+    }
+
+    .linksBox {
+        height: 100%;
+        width: 100%;
+    }
+
+    .twoButtonsBox {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav {
+        width: 80%;
+    }
+
+    .headerLineBox {
+        display: none;
+        width: 0;
+    }
+
+    .projectCard {
+        height: 240px;
+        width: 500px;
+    }
+
+    .projectPicBox {
+        height: 100px;
+        width: 100px;
+    }
+
+    .projectDescBox {
+        height: 100px;
+    }
+
+    .projectDesc {
+        font-size: 12px;
+    }
+
+    .projectTech {
+        font-size: 14px;
+    }
+
+    .projectName {
+        font-size: 18px;
+    }
+
+    .introductionRightHeaderText {
+        font-size: 30px;
+    }
+
+    .skillsHeaderText {
+        font-size: 30px;
+    }
+
+    .portfolioHeaderText {
+        font-size: 30px;
+    }
+
+    .portfolioHeader {
+        height: 5%;
+        align-items: flex-end;
+    }
+
+    .portfolioMain {
+        height: 95%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .twoButtonsBox {
+        width: 70%;
+    }
+
+    header {
+        padding: 30px 30px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .twoButtonsBox {
+        width: 80%;
+    }
+
+    header {
+        padding: 30px 30px;
+    }
+
+    .projectCard {
+        height: 240px;
+        width: 400px;
+    }
+
+    .projectPicBox {
+        height: 75px;
+        width: 75px;
+    }
+
+    .projectDescBox {
+        height: 75px;
+        width: 70%;
+    }
+
+    .projectDesc {
+        font-size: 12px;
+    }
+
+    .projectTech {
+        font-size: 10px;
+    }
+
+    .projectName {
+        font-size: 16px;
+    }
+
+    .introDescText {
+        font-size: 18px;
+    }
+
+    .fullStackText {
+        font-size: 16px;
+    }
+
+    .nameText {
+        font-size: 28px;
+    }
+
+    .introductionRightBodyText {
+        font-size: 16px;
+    }
+
+    .skillsShelfHeaderText {
+        font-size: 16px;
+    }
+
+    .skillsShelfBodyText {
+        font-size: 14px;
+    }
+
+    .linkText {
+        font-size: 16px;
+    }
+
+    .navText {
+        font-size: 16px;
+    }
+
+    .pictureBox {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .twoButtonsBox {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .twoButtonsBox {
+        width: 100%;
+    }
+
+    .projectCard {
+        height: 200px;
+        width: 300px;
+    }
+
+    .projectPicBox {
+        height: 50px;
+        width: 50px;
+    }
+
+    .projectDescBox {
+        height: 50px;
+        width: 70%;
+    }
+
+    .projectDesc {
+        font-size: 12px;
+    }
+
+    .projectTech {
+        display: none;
+    }
+
+    .projectName {
+        font-size: 16px;
+    }
+
+    .footerText {
+        font-size: 14px;
+    }
+
+    .introDescText {
+        font-size: 18px;
+    }
+
+    .fullStackText {
+        font-size: 16px;
+    }
+
+    .nameText {
+        font-size: 24px;
+    }
+    .introductionRightBodyText {
+        font-size: 16px;
+    }
+
+    .skillsShelfHeaderText {
+        font-size: 16px;
+    }
+
+    .skillsShelfBodyText {
+        font-size: 14px;
+    }
+
+    .linkText {
+        font-size: 16px;
+    }
+
+    .navText {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navText {
+        font-size: 14px;
+    }
+
+    .introductionRightHeaderText {
+        font-size: 24px;
+    }
+
+    .skillsHeaderText {
+        font-size: 24px;
+    }
+
+    .portfolioHeaderText {
+        font-size: 24px;
+    }
+}
